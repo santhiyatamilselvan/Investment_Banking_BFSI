@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+
+    - name: test-1
+      description: "A staging dbt model"
+      columns:
+          - name: column_1
+            description: "column for json format"
+            tests:
+                - unique
+                - not_null
